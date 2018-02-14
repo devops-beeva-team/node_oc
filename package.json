@@ -1,0 +1,22 @@
+{
+  "name": "node_oc",
+  "version": "1.0.0",
+  "description": "node server to tes openshift jenkins deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rozguelstinsking/node_oc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rozguelstinsking/node_oc/issues"
+  },
+  "homepage": "https://github.com/rozguelstinsking/node_oc#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
