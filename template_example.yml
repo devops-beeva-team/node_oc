@@ -1,0 +1,29 @@
+kind: Template
+apiVersion: v1
+metadata:
+  name: my-template
+objects:
+- kind: BuildConfig
+  apiVersion: v1
+  metadata:
+    name: template-metadataBuild-example
+    annotations:
+      # wait-for-ready used on BuildConfig ensures that template instantiation
+      # will fail immediately if build fails
+      template.alpha.openshift.io/wait-for-ready: "true"
+  spec:
+    ...
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: template-metadataDeploy-example
+    annotations:
+      template.alpha.openshift.io/wait-for-ready: "true"
+  spec:
+    ...
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: template-metadataService-example
+  spec:
+    ...
