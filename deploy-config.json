@@ -1,0 +1,55 @@
+{
+  "kind": "DeploymentConfig",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "deployment-example"
+  },
+  "spec": {
+    "template": { 
+      "metadata": {
+        "labels": {
+          "name": "shell-demo"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "container-deploy",
+            "image": "testing-jenkins/node-srvr:latest",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "protocol": "TCP"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "replicas": 1, 
+    "selector": {
+      "name": "frontend"
+    },
+    "triggers": [
+      {
+        "type": "ConfigChange" 
+      },
+      {
+        "type": "ImageChange", 
+        "imageChangeParams": {
+          "automatic": true,
+          "containerNames": [
+            "helloworld"
+          ],
+          "from": {
+            "kind": "ImageStreamTag",
+            "name": "testing-jenkins/node-srvr:latest"
+          }
+        }
+      }
+    ],
+    "strategy": { 
+      "type": "Rolling"
+    }
+  }
+}
