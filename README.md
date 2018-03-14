@@ -16,3 +16,8 @@ node server to tes openshift jenkins deploy
 ## And
 
 ## $ npm install to install all dependencies needed in package.json
+
+
+REFS:
+
+https://blog.sonatype.com/using-nexus-3-as-your-repository-part-2-npm-packages
