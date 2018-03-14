@@ -10,3 +10,9 @@ node server to tes openshift jenkins deploy
 ## Running the command: 
 
 ## $ npm publish 
+
+## To publish the package
+
+## And
+
+## $ npm install to install all dependencies needed in package.json
