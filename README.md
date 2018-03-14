@@ -21,6 +21,10 @@ node server to tes openshift jenkins deploy
 
 ## $ npm install to install all dependencies needed in package.json
 
+# trubleshooting :
+
+## if when you are running the "$ npm insttall" command something fails becouse a dependency is needed then you must 
+## to publish that dependency into nexus repository.
 
 REFS:
 
