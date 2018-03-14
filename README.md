@@ -11,7 +11,11 @@ node server to tes openshift jenkins deploy
 
 ## $ npm publish 
 
-## To publish the package
+## or
+
+## $ npm publish --registry http://localhost:8081/nexus/content/repositories/npm/
+
+## To publish the package to specific registry pointing to nexus
 
 ## And
 
