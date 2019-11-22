@@ -4,7 +4,8 @@
   "description": "node server to tes openshift jenkins deploy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/rozguelstinsking/node_oc#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mocha": "^6.2.2"
   }
 }
