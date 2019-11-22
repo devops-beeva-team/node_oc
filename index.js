@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
   res.send('Hello World! this node server was started by openshift deploy ... it creates a service and assigned new route');
 });
 
-pp.get('/test', function (req, res) {
+app.get('/test', function (req, res) {
   res.send('Calling diferent path into same context /  :P'>
 });
 
