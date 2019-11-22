@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test', function (req, res) {
-  res.send('Calling diferent path into same context /  :P'>
+  res.send('Calling diferent path into same context  :P');
 });
 
 
