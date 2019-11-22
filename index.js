@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
   res.send('Hello World! this node server was started by openshift deploy ... it creates a service and assigned new route');
 });
 
-app.listen(5000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('Example app listening on port 8080 mi cabrón jajajaj!');
 });
 
